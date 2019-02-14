@@ -5,10 +5,10 @@ ENV ANDROID_VERSION="28"
 
 # image mostly inspired from https://github.com/GoogleCloudPlatform/cloud-builders-community/blob/770e0e9/flutter/Dockerfile
 
-LABEL org.label-schema.name="Alpine linux image for Flutter test projects" \
-      org.label-schema.license="MIT" \
-      org.label-schema.vcs-type="git" \
-      org.label-schema.vcs-url="https://github.com/gableroux/flutter_lcov_docker"
+LABEL com.gableroux.flutter.name="debian linux image for Flutter" \
+      com.gableroux.flutter.license="MIT" \
+      com.gableroux.flutter.vcs-type="git" \
+      com.gableroux.flutter.vcs-url="https://github.com/gableroux/docker-flutter"
 
 WORKDIR /
 
