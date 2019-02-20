@@ -57,4 +57,4 @@ RUN flutter doctor -v
 
 ENV PATH $PATH:/flutter/bin/cache/dart-sdk/bin:/flutter/bin
 
-ENTRYPOINT [ "flutter" ]
+CMD ['ansible']
