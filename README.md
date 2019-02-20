@@ -16,7 +16,7 @@ Flutter + Lcov for code Coverage reports!
 
 ```yaml
 test:
-  image: gableroux/flutter:v1.2.0
+  image: gableroux/flutter:v1.2.1
   script:
     - flutter test --coverage
     - genhtml coverage/lcov.info --output=coverage
