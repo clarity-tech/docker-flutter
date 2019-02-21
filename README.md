@@ -12,6 +12,26 @@ Flutter + Lcov for code Coverage reports!
 
 ## Usage
 
+### command line
+
+*build for android*
+
+```bash
+docker run --rm \
+  -v "$(pwd):/src/" \
+  gableroux/flutter:v1.2.1 \
+  bash -c "cd /src/ && flutter build apk --release"
+```
+
+*run the tests*
+
+```bash
+docker run --rm \
+  -v "$(pwd):/src/" \
+  gableroux/flutter:v1.2.1 \
+  bash -c "cd /src/ && flutter test --coverage && genhtml coverage/lcov.info --output=coverage"
+```
+
 ### gitlab-ci example
 
 See [gableroux/gitlab_ci_flutter_example](https://gitlab.com/gableroux/gitlab_ci_flutter_example/)
