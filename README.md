@@ -19,7 +19,7 @@ Flutter + Lcov for code Coverage reports!
 ```bash
 docker run --rm \
   -v "$(pwd):/src/" \
-  gableroux/flutter:v1.9.1+hotfix.1 \
+  gableroux/flutter:v1.9.1+hotfix.2 \
   bash -c "cd /src/ && flutter build apk --release"
 ```
 
@@ -28,7 +28,7 @@ docker run --rm \
 ```bash
 docker run --rm \
   -v "$(pwd):/src/" \
-  gableroux/flutter:v1.9.1+hotfix.1 \
+  gableroux/flutter:v1.9.1+hotfix.2 \
   bash -c "cd /src/ && flutter test --coverage && genhtml coverage/lcov.info --output=coverage"
 ```
 
