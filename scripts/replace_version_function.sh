@@ -8,6 +8,10 @@ replace_version() {
     git add Dockerfile
     git add README.md
     git commit -m "Set version to $new_version"
+
+    git push --delete origin $new_version || true
+    git tag -d $new_version
+
     git tag $new_version
     git push
     git push --tags
