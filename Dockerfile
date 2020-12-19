@@ -5,10 +5,10 @@ ENV ANDROID_VERSION="28"
 
 # image mostly inspired from https://github.com/GoogleCloudPlatform/cloud-builders-community/blob/770e0e9/flutter/Dockerfile
 
-LABEL com.gableroux.flutter.name="debian linux image for Flutter" \
+LABEL com.gableroux.flutter.name="Debian linux image for Flutter" \
       com.gableroux.flutter.license="MIT" \
       com.gableroux.flutter.vcs-type="git" \
-      com.gableroux.flutter.vcs-url="https://github.com/gableroux/docker-flutter"
+      com.gableroux.flutter.vcs-url="https://github.com/clarity-tech/docker-flutter"
 
 WORKDIR /
 
